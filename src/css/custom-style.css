@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto Mono";
+}
+
+.profileImage {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+/* #####[ Animation ]####################### */
+
+.popup {
+    transition: all 0.5s ease;
+}
+.popup.popup-entering {
+    transform: scaleX(1);
+}
+.popup.popup-exiting {
+    transform: scaleX(1.05);
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.popup.popup-exited{
+    transform: scaleX(1.05);
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
