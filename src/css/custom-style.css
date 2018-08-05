@@ -1,5 +1,7 @@
 body {
     font-family: "Roboto Mono";
+    margin: 0;
+    padding: 0;
 }
 
 .profileImage {
@@ -11,22 +13,64 @@ body {
 /* #####[ Animation ]####################### */
 
 .popup {
-    transition: all 0.5s ease;
-}
-.popup.popup-entering {
-    transform: scaleX(1);
+    transition: all 0s ease;
 }
 .popup.popup-exiting {
-    transform: scaleX(1.05);
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
 
 .popup.popup-exited{
-    transform: scaleX(1.05);
+    animation: bounce infinite 1s;
+    transform-origin: center bottom;
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
+/* #####[ CSSTRansition animaiton   ]####################### */
 
+.popup-enter-done {
+    color: #721c24;
+}
+.popup-exit-active {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.popup-exit-done{
+    color: #721c24;
+    animation: bounce infinite 1s;
+    transform-origin: center bottom
+}
+
+/* #####[ CSSTRansition animaiton   ]####################### */
+@keyframes bounce {
+    0%,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        -webkit-transform: translateZ(0);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transform: translateZ(0)
+    }
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        transform: translate3d(0, -30px, 0)
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        transform: translate3d(0, -15px, 0)
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0)
+    }
+}
