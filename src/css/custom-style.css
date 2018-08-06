@@ -10,41 +10,52 @@ body {
     border-radius: 50%;
 }
 
+.selected {
+    color: purple;
+    font-weight: 600;
+    background-color: #f6fbff;
+    border-radius: 5px;
+}
+
 /* #####[ Animation ]####################### */
 
 .popup {
     transition: all 0s ease;
 }
+
 .popup.popup-exiting {
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
 
-.popup.popup-exited{
+.popup.popup-exited {
     animation: bounce infinite 1s;
     transform-origin: center bottom;
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
+
 /* #####[ CSSTRansition animaiton   ]####################### */
 
 .popup-enter-done {
     color: #721c24;
 }
+
 .popup-exit-active {
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
 
-.popup-exit-done{
+.popup-exit-done {
     color: #721c24;
     animation: bounce infinite 1s;
     transform-origin: center bottom
 }
 
 /* #####[ CSSTRansition animaiton   ]####################### */
+
 @keyframes bounce {
     0%,
     20%,
