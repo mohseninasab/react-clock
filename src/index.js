@@ -1,8 +1,6 @@
 //######[ bootstrap Libraries ]##########################################
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/custom-style.css';
-// import $ from 'jquery';
-// import Popper from 'popper.js';
 
 //######[ React Libraries ]##############################################
 import React from 'react';
@@ -26,12 +24,12 @@ const App = () => {
             <div>
                 <header>
                     <nav className="nav pt-2 p1">
-                        <NavLink className="nav-link" to="/" exact activeStyle={{color:'purple',fontWeight:'600',backgroundColor:"#f6fbff",borderRadius:"5px"}}>Home</NavLink>
-                        <NavLink className="nav-link" to="/posts" activeStyle={{color:'purple',fontWeight:'600',backgroundColor:"#f6fbff",borderRadius:"5px"}}>Posts</NavLink>
-                        <NavLink className="nav-link" to="/animation" activeStyle={{color:'purple',fontWeight:'600',backgroundColor:"#f6fbff",borderRadius:"5px"}}>∆nimation</NavLink>
-                        <NavLink className="nav-link" to="/conditional" activeStyle={{color:'purple',fontWeight:'600',backgroundColor:"#f6fbff",borderRadius:"5px"}}>Conditional</NavLink>
-                        <NavLink className="nav-link" to="/profile" activeStyle={{color:'purple',fontWeight:'600',backgroundColor:"#f6fbff",borderRadius:"5px"}}>Profile</NavLink>
-                        <NavLink className="nav-link" to="/proptype" activeStyle={{color:'purple',fontWeight:'600',backgroundColor:"#f6fbff",borderRadius:"5px"}}>Prop Type</NavLink>
+                        <NavLink className="nav-link" activeClassName="selected" to="/" exact >△Home</NavLink>
+                        <NavLink className="nav-link" activeClassName="selected" to="/posts">★Posts</NavLink>
+                        <NavLink className="nav-link" activeClassName="selected" to="/animation">▶︎Animation</NavLink>
+                        <NavLink className="nav-link" activeClassName="selected" to="/conditional">✸Conditional</NavLink>
+                        <NavLink className="nav-link" activeClassName="selected" to="/profile" >◉Profile</NavLink>
+                        <NavLink className="nav-link" activeClassName="selected" to="/proptype">☯︎Prop Type</NavLink>
                     </nav>
                 </header>
                 <hr className="mb-2 mt-2" />
@@ -43,7 +41,7 @@ const App = () => {
                     <Route path="/posts" component={Posts} />
                     <Route path="/proptype" component={PropType} />
                     <Route path="/" exact component={Home} />
-                    <Route render={()=> <h2 className="text-center mt-5 text-danger"><span className="text-white bg-danger rounded pl-2 pr-2">404</span> - OOPS!!! The page isn't avalibale</h2>}/>
+                    <Route render={()=> <h2 className="text-center mt-5 text-danger"><span className="text-white bg-danger rounded pl-2 pr-2">ERROR 404</span> - OOPS!!! The page isn't avalibale</h2>}/>
                 </Switch>
             </div>
         </BrowserRouter>    
