@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 
 const PropTypeCard = props => {
   return (
@@ -11,10 +11,10 @@ const PropTypeCard = props => {
   );
 };
 // the method below will check the type of variables inside props
-PropTypeCard.propTypes = {
-  firstName: PropTypes.string,
-  lastName: PropTypes.string,
-  age: PropTypes.number,
-  hobbies: PropTypes.object
-};
+// PropTypeCard.propTypes = {
+//   firstName: PropTypes.string,
+//   lastName: PropTypes.string,
+//   age: PropTypes.number,
+//   hobbies: PropTypes.object
+// };
 export default PropTypeCard;
