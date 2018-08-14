@@ -1,0 +1,23 @@
+[
+    {
+      "id": "1",
+      "author": { "firstName": "Mehdi", "lastName": "Mohseni Nasab" },
+      "title": "The global warming",
+      "text":
+        "the CO2 gas in the air cost us 'humans' greate problems including...."
+    },
+    {
+      "id": "2",
+      "author": { "firstName": "Ramin", "lastName": "Afhami" },
+      "title": "power of communication",
+      "text":
+        "must of our interactions thrugh the day are short if we smaile and be respectful to others it will make a big diference in the quality of our lifes"
+    },
+    {
+      "id": "3",
+      "author": { "firstName": "Mohammad", "lastName": "Shobeiri" },
+      "title": "power of react native",
+      "text":
+        "to decrease the cost of developing a peogram in multiple platfor is to code with React Native a powerful Libray ..."
+    }
+  ]
